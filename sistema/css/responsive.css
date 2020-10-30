@@ -1,0 +1,455 @@
+@media screen and (max-width: 1100px){
+
+	header h1{
+		font-size: 20px;
+	}
+
+	.photouser{
+		display: none;
+	}
+
+	.btnMenu{
+	    display: block;
+	}
+
+	nav{
+		position: absolute;
+		width: 100%;
+		left: -100%;
+		transition: 0.5s all;
+	}
+
+	#contenedor{
+		padding: 45px 10px 10px;
+	}
+
+	rol, lugar{
+		display: none;
+	}
+
+	fecha{
+		font-size: 12px;
+	}
+	
+	nav .principal > a{
+    	background: none;
+	}
+	.flecha{
+	    float: right;
+	}
+	.flecha i{
+	    display: inherit;
+	}
+
+	nav ul{
+		flex-direction: column;
+	}
+
+	nav ul li{
+		width: 100%;
+		border-bottom: 1px solid #ccc;
+	}
+
+	nav ul li a{
+		width: 100%;
+		text-align: left;
+	}
+
+	nav li ul{
+		position: relative;
+		border-radius: 0;
+	}
+
+	nav li ul li:last-child{
+		border-radius: 0;
+	}
+
+	header h1{
+		font-size: 18px;
+	}
+
+	nav ul li:hover ul{
+		display: none;
+	}
+
+	.tablaProveedor{
+		width: 100%;
+		border: 5px solid #ccc;
+		overflow: scroll;
+	}
+
+	.tablaProveedor table, .tablaProducto table{
+		width: 1100px;
+	}
+
+}
+
+@media screen and (max-width: 1000px){
+		
+	.divTitulo{
+		clear: right;
+	}
+
+	.divTitulo .btn_new{
+		float: right;
+	}
+	
+	.divBusquedas{
+		float: inline-end;
+	}
+	
+	.divBusquedas .form_select{
+		float: left;
+		width: 110px;
+		height: 25px;
+		padding: 0px 2px;
+		margin-top: 10px;
+	}
+	
+	.divBusquedas #busqueda{
+		font-size: 8pt;
+	}
+
+	.divBusquedas .btn_select {
+		padding: 5px;
+	}
+	
+	.divBusquedas .form_search{
+		float: right;
+		margin-top: 0;
+	}
+	
+	.divBusquedas .form_search .btn_search{
+		padding: 5px 7px;
+		font-size: 8pt;
+	}	
+
+	.btn_new{
+		margin: 13px;
+		padding: 5px 10px;
+		font-size: 8pt;
+	}	
+
+	/* Buscar por fecha */
+	
+	.divBuscarPorFechas h5 {
+		font-size: 12px;
+	}	
+
+	.divBuscarPorFechas .form_busca_fechas label {
+		margin: 0;
+		margin-right: 5px;
+		margin-top: 0;
+		font-size: 9pt;
+	}	
+	
+	.divBuscarPorFechas .form_busca_fechas input {
+		margin: 0 5px;
+		font-size: 9pt;
+		height: 25px;
+	}
+	
+	.divBuscarPorFechas .form_busca_fechas .btn_view{
+		padding: 5px 7px;
+		font-size: 8pt;
+	}	
+
+}
+
+@media screen and (max-width: 850px){
+
+	#contenedor h1{
+		font-size: 16pt !important;
+		margin-top: 5px;
+	} 
+
+	/* ***** Ventas ****** */
+	
+	.divTitulo .btn_new{
+		margin-top: 7px;
+		margin-left: 10px;
+		padding: 5px 10px;
+		font-size: 8pt;
+	}
+
+	.divBusquedas .form_select {
+		margin-top: 10px;
+	}
+
+}
+
+@media screen and (max-width: 768px){
+
+	#contenedor form{
+		width: 100%;
+	}
+
+	header h1{
+		font-size: 16px;
+	}
+
+	fecha {
+		display: none;
+	}
+
+	.escritorio{
+		flex-wrap: wrap;
+	}
+
+	.escritorio a{
+		width: 50%;
+		border: 1px solid #ccc;
+	}
+
+	.contenedorDatosUsuario, .contenedorDatosEmpresa{
+		width: 100%;
+		margin-bottom: 20px;
+		padding: 10px;
+	}
+
+	#contenedor h1{
+		font-size: 12pt !important;
+	}
+
+	.logoUsuario, .logoEmpresa{
+		width: 100px;
+		height: 100px;
+	}
+
+	/* ***** Lista usuarios ****** */
+	
+	.btn_new{
+		margin: 0;
+		/* margin-right: 10px; */
+		margin-left: 5px;
+		padding: 5px 10px;
+		font-size: 8pt;
+	}
+
+	.form_search{
+		width: 100% !important;
+		margin-top: 10px;
+		border: 0;
+	}
+
+	.contenedorTabla{
+		width: 100%;
+		border: 5px solid #ccc;
+		overflow: scroll;
+	}
+
+	table{
+		width: 850px;
+	}
+
+ 	table td, table th{
+		padding: 5px;
+		font-size: 10pt;
+	}
+
+	.form-registro {
+	    width: 100%;
+	}	
+
+	form{
+	    padding: 10px;
+	}	
+
+	.btn_save{
+	    width: 100%;
+	}
+ 
+ 	.bodyModal{
+ 		width: 100%;
+ 		padding: 10px;
+ 	}
+
+ 	.btn_add, .btn_cancel, .btn_ok{
+		width: 100px;
+		font-size: 10pt;
+		border: 0; 		
+		font-family: arial;
+	 }
+	 
+	 	/* ***** Ventas ****** */
+	
+	.divTitulo .btn_new{
+		margin-top: 7px;
+		margin-left: 10px;
+		padding: 5px 10px;
+		font-size: 8pt;
+	}
+
+	.divBusquedas .form_select .btn_select {
+		width: 110px;
+	}
+}
+
+@media screen and (max-width: 680px){
+
+	header h1{
+		font-size: 14px;
+		padding-left: 5px;
+	}
+
+	.optionsBar span, .user{
+		display: none;
+	}
+
+	.escritorio a{
+		padding: 5px 2px;
+	}
+
+	.escritorio p{
+		font-size: 9pt;
+	}
+
+	.escritorio span{
+		font-size: 9pt;
+	}
+
+	.divDatosUsuario label{
+		width: 80px;
+	}
+
+	.divInfoSistema form label {
+	    font-size: 10pt;
+	    margin-right: 5px;
+	    width: 150px;
+	}
+
+	.divInfoSistema form input {
+		font-size: 10pt;
+	}
+
+	div.form_select{
+		margin: 10px 0 0 0; 
+		border-radius: 5px;
+		width: 110px;
+		height: 30px;
+
+	}
+
+	a.btn_select {
+		/* padding: 8px; */
+		letter-spacing: 0;
+		font-size: 8pt;
+		padding: 5px;
+		text-align: center;
+	}	
+
+	.cabeceraSuperior {
+		display: grid;
+	}
+
+	.divTitulo .btn_new{
+		float: right;
+	}
+	
+	.divBusquedas{
+		float: inline-start;
+	}
+	
+	.divBusquedas .form_select{
+		float: left;
+		width: 130px;
+		height: 25px;
+		padding: 0px 2px;
+	}
+	
+	.divBusquedas #busqueda{
+		font-size: 8pt;
+	}
+	
+	.divBusquedas .form_search{
+		float: right;
+		margin-top: 0;
+	}
+	
+	.divBusquedas .form_search .btn_search{
+		padding: 5px 7px;
+		font-size: 8pt;
+	}
+}
+
+@media screen and (max-width: 460px){
+
+	header h1{
+		font-size: 14px;
+		padding-left: 5px;
+	}
+
+	.optionsBar span, .user{
+		display: none;
+	}
+
+	.escritorio a{
+		padding: 5px 2px;
+	}
+
+	.escritorio p{
+		font-size: 9pt;
+	}
+
+	.escritorio span{
+		font-size: 9pt;
+	}
+
+	.divDatosUsuario label{
+		width: 80px;
+	}
+
+	.divInfoSistema form label {
+	    font-size: 10pt;
+	    margin-right: 5px;
+	    width: 150px;
+	}
+
+	.divInfoSistema form input {
+		font-size: 10pt;
+	}
+
+	div.form_select{
+		margin: 10px 0 0 0; 
+		border-radius: 5px;
+		width: 110px;
+		height: 30px;
+
+	}
+
+	a.btn_select {
+		/* padding: 8px; */
+		letter-spacing: 0;
+		font-size: 8pt;
+		padding: 5px;
+	}	
+
+	.divTitulo .btn_new{
+		float: right;
+	}
+	
+	.divBusquedas{
+		float: inline-end;
+	}
+	
+	.divBusquedas .form_select{
+		float: left;
+		width: 130px;
+		height: 25px;
+		padding: 0px 2px;
+	}
+	
+	.divBusquedas #busqueda{
+		font-size: 8pt;
+	}
+	
+	.divBusquedas .form_search{
+		float: right;
+		margin-top: 0;
+	}
+	
+	.divBusquedas .form_search .btn_search{
+		padding: 5px 7px;
+		font-size: 8pt;
+	}
+}

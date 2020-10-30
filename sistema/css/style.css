@@ -1,0 +1,954 @@
+@import url(../fonts/GothamBook.css);
+@import url(../fonts/GothamBold.css);
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* font-family: 'arial'; */
+	/* border: 1px solid red; */
+}
+body{
+	background: #ededed;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'arial';
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+h1{
+	font-size: 26px;
+}
+h2{
+	font-size: 20px;
+}
+h3{
+	font-size: 18px;
+}
+h4{
+	font-size: 16px;
+}
+h5{
+	font-size: 14px;
+}
+h6{
+	font-size: 12px;
+}
+p{
+	font-family: 'arial';
+	letter-spacing: 2px;
+	font-size: 14px;
+	line-height: 20px;
+}
+a{
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-family: arial;
+}
+span {
+    font-family: 'GothamBook';
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+}
+
+.btnMenu{
+	color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+    display: none;
+}
+
+.verMenu{
+	left: 0;
+	transition: 0.5s all;s
+}
+
+.header{
+	color: #FFF;
+	background: #0a4661;
+	height: 35px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+.optionsBar{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.optionsBar span {
+    color: #FFF;
+    font-size: 11pt;
+    font-family: 'GothamBook';
+    text-transform: lowercase;
+    margin-left: 30px;
+}
+
+.optionsBar  rol {
+    color: #ccc;
+    font-size: 9pt;
+    font-family: 'GothamBook';
+    text-transform: capitalize;
+    /* margin-left: 30px; */
+}
+
+.photouser {
+    margin-left: 30px;
+    width: 25px;
+    height: 25px;
+}
+
+.close{
+	width: 25px;
+    height: 25px;
+}
+
+.optionsBar a {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin-left: 30px;
+}
+
+nav ul{
+	background: #058167;
+	/*background: #05817d;*/
+	list-style: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+nav ul > li a{
+	position: relative;
+}
+
+nav a{
+	color: #FFF;
+	display: block;
+	font-size: 10pt;
+	font-family: 'GothamBook';
+	padding: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: background .5s;
+	border-right: 1px solid #319B8F;
+}
+
+nav .principal > a{
+    background: url(../img/arrow_bottom.png) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto auto;
+    background-position: 94% center;
+    background-size: 10px;
+}
+
+.flecha i{
+    display: none;
+}
+
+nav ul li:hover ul{
+	display: block;
+}
+
+nav li ul{
+	/*background: #177470;*/
+	background: #2d9872;
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	align-items: flex-start;
+	border-radius: 0 0 10px 10px;
+}
+
+nav li ul a{
+	position: relative;
+	padding: 10px 30px;
+	border-right: initial;
+}
+
+nav li ul a:hover{
+	/*background: #2c9595;*/
+	background: #147556;
+}
+
+nav li ul li:last-child{
+	border-radius: 0 0 10px 10px;
+	overflow: hidden;
+}
+
+#contenedor{
+	padding: 90px 15px 15px;
+}
+/*****************************************************************/
+
+.form-registro{
+	width: 450px;
+	margin:  auto;
+	margin-top: 20px;
+}
+
+.form-registro h1{
+	color: #3c93b0;
+}
+
+hr{
+	border: 0;
+	background: #ccc;
+	height: 1px;
+	margin:  10px 0;
+	display: block;	
+}
+
+form{
+	background: #fff;
+	margin: auto;
+	padding: 20px 50px;
+	border: 1px solid #d1d1d1;
+	/* border-radius: 50px; */
+}
+
+label{
+	display: block;
+	font-size: 12pt;
+	font-family: 'GothamBook';
+	margin: 15px auto 5px auto;
+}
+
+input, select{
+	display: block;
+	width: 100%;
+	font-size: 11pt;
+	padding: 5px;
+	border: 1px solid #85929e;
+	border-radius: 5px;
+}
+
+.noPrimerItem option:first-child{
+	display: none;
+}
+
+.alerta{
+	border: 1px solid #ddd;
+	width: 100%;
+	background: #66e07d66;
+	border-radius: 6px;
+	margin: 20px auto;
+}
+
+.msg_error{
+	color: #e65656;
+}
+
+.msg_ok{
+	color: #126e00;
+}
+
+.alerta p{
+	padding: 10px;
+}
+
+/* ************** LISTA USUARIOS **************** */
+
+#contenedor h1{
+	font-size: 35px;
+	display: inline-block;
+}
+/* Botón Crear producto */
+.btn_new, .btn_ok, .btn_add, .btn_act{
+	background: #239baa;
+	color: #fff;
+	display: inline-block;
+	padding: 5px 25px;
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 20px;
+	border: 0;
+	text-align: center;
+}
+.btn_ok, .btn_add, .btn_act{
+	padding: 5px;
+	width: 125px;
+	margin: 15px;
+}
+ /* Botón Registro */
+.btn_save{
+	/* width: 125px; */
+	background: #12a4c6;
+	color: #fff;
+	display: block;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 30px auto 15px auto;
+	border: 0;
+
+	letter-spacing: 1px;
+	font-size: 12pt;
+}
+
+.btn_cancel{
+	width: 125px;
+	background: #e66262;
+	color: #fff;
+	display: inline-block;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 15px;
+	border: 0;
+	/* font-size: 12pt; */
+	background: #42b343;
+}
+
+table{
+	border-collapse: collapse;
+	font-size: 12px;
+	font-family: 'Arial';
+	width: 100%;
+}
+
+table th{
+	text-align: center;
+	padding: 10px;
+	background: #3d7ba8;
+	color: #fff;
+}
+
+table tr:nth-child(odd){
+	background: #fff;
+}
+
+table td{
+	padding: 10px;
+}
+
+.link_edit{
+	color: #0ca4ce;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.link_activa{
+	color: green;
+	/* padding-right: 5px; */
+}
+
+.link_del{
+	color: #f26b6b;
+	padding-left: 5px;
+}
+
+.link_add{
+	color: #64b13c;
+	padding-right: 5px;
+}
+
+.data_delete{
+	text-align: center;
+	margin-top: 40px;
+}
+
+.data_delete h2{
+	font-size: 12pt;
+}
+
+.data_delete span{
+	font-weight: bold;
+	color: #4f72d4;
+	font-size: 12pt;
+}
+
+
+.data_delete form{
+	background: initial;
+	border: 0;
+}
+
+/* ************** Paginador ********************* */
+.paginador ul{
+	padding: 15px;
+	list-style: none;
+	background: #fff;
+	margin-top: 15px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -mos-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.paginador a, .pageSelected{
+	color: #428bca;
+	border: 1px solid #ddd;
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	width: 35px;
+}
+
+.paginador a:hover{
+	background: #ddd;
+}
+
+.pageSelected{
+	color: #fff;
+	background: #428bca;
+	border: 1px solid #428bca;
+}
+
+/* ***************** Buscador ********************* */
+
+.form_search{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	float: right;
+	background: initial;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.form_search .btn_search{
+	background: #1faac8;
+	color: #fff;
+	padding: 10px;
+	border: 0;
+	margin-left: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+
+div.form_select{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	float: right;	
+ 	background: #1faac8;
+ 	border: 0;
+	margin: 15px 20px; 
+	border-radius: 5px;
+}
+
+a.btn_select{
+	color: #fff;
+	padding: 8px;
+	border: 0;
+	cursor: pointer; 
+	letter-spacing: 1px;
+	font-size: 10pt;
+	font-style: italic;
+}
+
+/* *********************  CSS para boton upload imagen *********************** */
+
+ .prevFoto{
+	border: 1px solid #ccc;
+	/* background: url('../img/usur.png'); */
+	background-repeat: no-repeat;
+ 	display: flex;
+	justify-content: space-between;
+	width: 160px;
+	height: 150px;
+	position: relative;
+	background-size: cover;
+	background-position: center center;
+	margin: auto; 
+}
+
+.prevFoto label{
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2; 
+}
+
+.prevFoto img{
+	width: 100%;
+	height: 100%;
+}
+
+.upimg, .noBloque{
+	display: none !important;
+}
+
+.errorArchivo{
+	font-size: 16px;
+	font-family: arial;
+	color: #cc0000;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.delFoto{
+	color :#fff;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;	
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	background: red;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	z-index: 10; 
+}
+
+.imgBorrarProducto{
+	width: 175px;
+}
+
+/* ===================  Lista de productos ==================== */
+.img_producto img{
+	width: 60px;
+	height: 60px;
+	margin: auto;
+	/* object-fit: cover; */
+	object-fit: contain;
+	/* object-fit: scale-down; */
+}
+
+.img_producto, .acciones_producto{
+	text-align: center;
+}
+
+.modal{
+	position: fixed;
+ 	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.81);
+	display: none; 
+}
+
+	.modal h1{
+		color: #0e725d;
+		text-transform: uppercase;
+	}
+
+	.modal h2{
+		text-transform: uppercase;
+		margin-top: 15px;
+	}
+
+.bodyModal{
+	width: 100%;
+	height: 100%;
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+	display: -o-inline-flex;
+	display: inline-flex;		
+	justify-content: center;
+	align-items: center;
+}
+
+/* == quitar spin del control numérico ===== */
+/* == desde                            ===== */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* == hasta                            ===== */
+/* == quitar spin del control numérico ===== */
+
+#form_anular_factura,
+#form_add_producto,
+#form_act_producto,
+#form_del_producto{
+	width: 480px;	
+	text-align: center;
+}
+
+button{
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-family: arial;	
+	font-size: 12pt;
+}
+
+/*============ Ventas ============*/
+.datos_cliente, .datos_venta, .titulo_pagina{
+	width: 100%;
+	max-width: 900px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+#detalle_venta tr{
+	background-color: #FFF !important;
+}
+#detalle_venta td{
+	border-bottom: 1px solid #CCC;
+}
+.datos{
+	background-color: #e3ecef;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 2px solid #78909C;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.accion_cliente{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+
+.datos label{
+	margin: 5px auto;
+}
+.wd20{
+	width: 20%;
+}
+.wd25{
+	width: 25%;
+}
+.wd30{
+	width: 30%;
+}
+.wd40{
+	width: 40%;
+}
+.wd60{
+	width: 60%;
+}
+.wd100{
+	width: 100%;
+}
+#div_registro_cliente, #add_producto_venta{
+	display: none;
+}
+.displayN{
+	display: none;
+}
+.tbl_venta{
+	max-width: 900px;
+	margin: auto;
+}
+.tbl_venta tfoot td{
+	font-weight: bold;
+}
+.textright{
+	text-align: right;
+}
+.textcenter{
+	text-align: center;
+}
+.textleft{
+	text-align: left;
+}
+.btn_anular{
+	background-color: #f36a6a;
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 10px;
+	margin: 0 3px;
+	color: #FFF;
+}
+
+#nif_cliente{
+	text-transform: uppercase;
+}
+
+/* formulario ventas */
+.form_busca_fechas{
+	padding: 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 10px;
+	margin: 10px auto; 
+}
+
+.form_busca_fechas label{
+	margin: 0 10px;
+}
+
+.form_busca_fechas input{
+	width: auto;
+}
+
+.form_busca_fechas .btn_view{
+	padding: 8px;
+}
+
+
+.btn_view{
+	background-color: #1faac8;
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 10px;
+	margin: 0 3px;
+	color: #fff;
+}
+
+.div_acciones{
+	display: -webkit-flex;
+ 	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center; 
+}
+
+.totalfactura{
+	display: -webkit-flex;
+ 	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;	
+}
+
+.pagada, .anulada{
+	color: #fff;
+	background: #60a756;
+	text-align: center;
+	border-radius: 5px;
+	padding: 4px 15px;
+}
+
+.anulada{
+	background: #f36a6a;
+}
+
+.inactivo{
+	background: #a4a4a4;
+	color: #ccc;
+	cursor: default;}
+
+/*============ Panel de Control ============*/
+.tituloPanelControl{
+	width: 100%;
+	background: #fff;
+	padding: 5px 15px;
+	margin-bottom: 10px;
+	font-size: 18pt !important;
+	color: #0a4661;
+}
+
+.divContenedor{
+	margin-bottom: 20px;
+}
+.escritorio{
+	display: -webkit-flex;
+ 	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;	
+	justify-content: space-around;
+	width: 100%;
+	margin: auto;
+}
+
+.escritorio a{
+	color: #898989;
+	width: calc(100% / 5);
+	padding: 20px;
+	background: #fff;
+	font-size: 	25pt;
+	text-align: center;
+}
+
+.escritorio p{
+	color: #3279a9;
+}
+
+.escritorio a span{
+	font-weight: bold;
+	font-size: 18pt;
+}
+
+.contenedorPerfil{
+	display: -webkit-flex;
+ 	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;		
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.contenedorDatosUsuario, .contenedorDatosEmpresa{
+	width: 600px;
+	background: #fff;
+	padding: 10px 20px;
+}
+
+.logoUsuario, .logoEmpresa{
+	display: -webkit-flex;
+ 	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin: 0px auto 10px;
+	padding: 5px;
+	background: #e9e9e9;
+}
+
+.logoUsuario img{
+	width: 100%;
+	height: 100%;
+}
+
+.logoEmpresa img{
+	width: 90%;
+}
+
+.divDatosUsuario{
+	padding: 10px;
+	margin: auto;
+}
+
+.divInfoSistema h4{
+	background: #3279a7;
+	padding: 5px 10px;
+	color: #fff;
+	border-radius: 3px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.divDatosUsuario > div{
+	display: -webkit-flex;
+ 	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;	
+}
+
+.divDatosUsuario label{
+ 	width: 150px;
+	margin: 0;
+	margin-top: 5px;
+	margin-bottom: 5px; 
+}
+
+ .divDatosUsuario span{
+	padding: 5px;
+} 
+
+/* Información empresa  */
+.divInfoSistema form{
+	padding: 20px;
+}
+
+.divInfoSistema form > div{
+	display: -webkit-flex;
+ 	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;	
+	align-items: center;
+	margin: 5px auto;
+	padding: 5px;
+}
+
+.divInfoSistema form label{
+	margin: 0 auto;
+	margin-right: 5px;
+	width: 150px;
+}
+
+.divInfoSistema form input{
+
+}
+
+.divInfoSistema button{
+	width: 100%;
+}
+
+p.alertOk, p.alertOk{
+	color: #23922d;
+	text-align: center;
+	font-weight: bold;
+}
+
+p.alertKo, p.alertKo{
+	color: red;
+	text-align: center;
+	font-weight: bold;
+}
+.divTitulo {
+	float: inline-start;
+}
+
+.divBusquedas{
+	display: -webkit-flex;
+ 	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;		
+	float: right;	
+}
+
+.clearB{
+	clear: both;
+}
+
+.cabeceraBuscarFechas{
+	float: inline-start;
+}
